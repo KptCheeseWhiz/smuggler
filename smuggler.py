@@ -363,7 +363,7 @@ def print_info(msg, file_handle=None):
 	if file_handle is not None:
 		file_handle.write(plaintext+"\n")
 
-if __name__ == "__main__":
+def main():
 	global NOCOLOR
 	if sys.version_info < (3, 0):
 		print("Error: Smuggler requires Python 3.x")
@@ -443,3 +443,6 @@ if __name__ == "__main__":
 
 	if FileHandle is not None:
 		FileHandle.close()
+
+if __name__ == "__main__":
+  main()
